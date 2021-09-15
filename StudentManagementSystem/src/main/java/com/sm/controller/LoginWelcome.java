@@ -22,10 +22,16 @@ public class LoginWelcome extends HttpServlet{
 		HttpSession session=req.getSession();
 		StudentDTO dto=(StudentDTO)session.getAttribute("bean");
 		out.println("<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css\">");
+		out.println("<style>\r\n"
+				+ "        body {\r\n"
+				+ "            background-image: url(\"static/bgr.jpg\");\r\n"
+				+ "            background-repeat: no-repeat;\r\n"
+				+ "            background-size: cover;\r\n"
+				+ "        }</style>");
 		out.println(
-				"<div class='container'> <h1 class='text-center text-secondary'>Student Information</h1>");
+				"<div class='container'><div class='row my-5'> <h1 class='text-center text-secondary'>Student Information</h1>");
 		
-		out.println("<table class='table table-bordered table-hover'>");
+		out.println("<table class='table bg-light table-striped table-hover rounded'>");
 //		id
 		out.println("<tr>");
 		out.println("<th>ID</th>");
@@ -57,6 +63,7 @@ public class LoginWelcome extends HttpServlet{
 		out.println("<td>"+dto.getSaddr()+"</td>");
 		out.println("<tr>");
 		out.println("</table>");
+		out.println("</div>");
 		out.println("</div>");
 	}
 	@Override
