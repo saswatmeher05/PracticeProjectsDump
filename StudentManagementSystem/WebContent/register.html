@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("static/bgr.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .imgfill {
+            position: relative;
+            height: fit-content;
+            width: fit-content;
+        }
+
+        .bg-opacity {
+            background-color: rgb(242, 253, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="register" method="post">
+            <div class="row my-5 shadow no-gutters">
+                <div class="col-3">
+                    <img src="static/profilecon.jpg" class="img-fluid h-100 w-auto rounded-left">
+                </div>
+
+                <div class="col-9 bg-opacity rounded-right px-4 py-4">
+                    <div class="row my-5 mx-3 text-center">
+                        <h1 class="text-secondary mx-3">Student Registration</h1>
+
+                        <!--Student Name-->
+                        <div class="col-11 my-1">
+                            <input type="text" name="sname" placeholder="Enter Name" class="form-control">
+                        </div>
+
+                        <!--Student Age-->
+                        <div class="col-11 my-1">
+                            <input type="text" name="sage" placeholder="Enter Age" class="form-control">
+                        </div>
+
+                        <!--Student Email-->
+                        <div class="col-11 my-1">
+                            <input type="text" name="semail" placeholder="Enter Email" class="form-control">
+                        </div>
+
+                        <!--Password-->
+                        <div class="col-11 my-1">
+                            <input type="password" name="spwd" placeholder="Enter Password" class="form-control">
+                        </div>
+
+                        <!--Confirm Password-->
+                        <div class="col-11 my-1">
+                            <input type="password" name="scpwd" placeholder="Re-Enter Password" class="form-control">
+                        </div>
+
+                        <!--Gender-->
+                        <div class="col-11 my-1">
+                            <select name="sgen" id="sgen" class="form-control text-secondary">
+                                <option value="">-Select Gender-</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+
+                        <!--Student Address-->
+                        <div class="col-11 my-1">
+                            <textarea name="saddr" id="saddr" placeholder="Enter Address"
+                                class="form-control"></textarea>
+                        </div>
+
+                        <!--Student Photo-->
+                        <div class="col-11 my-1">
+                            <input type="file" class="form-control" name="sphoto" id="sphoto">
+                        </div>
+
+                        <div class="col-11 my-1 text-left">
+                            <input type="submit" value="Register" class="btn btn-primary">
+                            <a href="login.html" class="mx-2 mt-1">Already have an account?</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--outer row end-->
+        </form>
+    </div>
+    <!--container end-->
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("static/bgr.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .imgfill {
+            position: relative;
+            height: fit-content;
+            width: fit-content;
+        }
+
+        .bg-opacity {
+            background-color: rgb(242, 253, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="login" method="post">
+            <div class="row my-5 shadow no-gutters">
+                <div class="col-3">
+                    <img src="static/profilecon.jpg" class="img-fluid h-100 w-auto rounded-left">
+                </div>
+
+                <div class="col-9 bg-opacity rounded-right px-4 py-5">
+                    <div class="row my-5 mx-3 text-center">
+                        <h1 class="text-secondary mx-3">Login</h1>
+
+                        <!--Student Username-->
+                        <div class="col-11 my-1">
+                            <input type="text" name="semail" placeholder="Username/Email" class="form-control">
+                        </div>
+
+                        <!--Password-->
+                        <div class="col-11 my-1">
+                            <input type="password" name="spwd" placeholder="Enter Password" class="form-control">
+                        </div>
+
+                        <div class="col-11 my-1 text-left">
+                            <input type="submit" value="Login" class="btn btn-primary">
+                            <a href="register.html" class="mx-2 mt-1">Don't have an account?</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--outer row end-->
+        </form>
+    </div>
+    <!--container end-->
+</body>
+</html>

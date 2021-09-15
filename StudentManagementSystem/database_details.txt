@@ -1,0 +1,5 @@
+create table student(sid number(10),sname varchar2(30),sage number(5),semail varchar2(30),spwd varcha2(20),sgen varchar2(10),saddr varchar2(20),sphoto blob,primary key(sid,semail,spwd));
+
+insert into student values(1,'saswat',24,'saswat@gmail.com','admin','male','sonepur',NULL);
+
+commit;
